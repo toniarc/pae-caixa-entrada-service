@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.gov.pa.pae.caixaentrada</groupId>
+		<artifactId>pae-caixa-entrada-service</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>pae-caixa-entrada-springboot</artifactId>
+	<name>pae-caixa-entrada-springboot</name>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>br.gov.pa.pae.caixaentrada</groupId>
+			<artifactId>pae-caixa-entrada-activemq-adapter</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.gov.pa.pae.caixaentrada</groupId>
+			<artifactId>pae-caixa-entrada-application</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.gov.pa.pae.caixaentrada</groupId>
+			<artifactId>pae-caixa-entrada-mongodb-adapter</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>

@@ -5,11 +5,24 @@
     <groupId>br.gov.pa.pae.caixaentrada</groupId>
     <artifactId>pae-caixa-entrada-service</artifactId>
     <version>1.0</version>
+    <relativePath>../</relativePath>
   </parent>
 
-  <groupId>br.gov.pa.pae.caixaentrada</groupId>
   <artifactId>pae-caixa-entrada-domain</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>pae-caixa-entrada-domain</name>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>br.gov.pa.prodepa.pae-common</groupId>
+      <artifactId>pae-common-domain</artifactId>
+    </dependency>
+
+  </dependencies>
 
 </project>
