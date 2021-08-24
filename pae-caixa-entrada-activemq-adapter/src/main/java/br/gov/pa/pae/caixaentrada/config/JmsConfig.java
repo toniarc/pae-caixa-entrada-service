@@ -72,6 +72,7 @@ public class JmsConfig {
         JmsTemplate jmsTemplate = new JmsTemplate();
         jmsTemplate.setConnectionFactory(connectionFactory());
         jmsTemplate.setMessageConverter(jacksonJmsMessageConverter());
+        jmsTemplate.setSessionTransacted(true);
         return jmsTemplate;
     }
     
